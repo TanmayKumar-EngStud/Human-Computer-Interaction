@@ -44,7 +44,7 @@ def speakModeOn():
     elif(command.lower().find("stop") != -1):
         print("Stopping")
     else:
-        print("I don't understand")
+        print("I don't understand, try again..")
     
 # load images as PhotoImage
 image_size = 25

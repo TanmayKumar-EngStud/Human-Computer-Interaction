@@ -1,8 +1,15 @@
 import customtkinter
+import warnings
 from PIL import Image, ImageTk  # <- import PIL for the images
 import os
 import speech_recognition as sr 
 PATH = os.path.dirname(os.path.realpath(__file__))
+def fxn():
+    warnings.warn("deprecated", DeprecationWarning)
+
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")
+    fxn()
 
 customtkinter.set_appearance_mode("Dark")  # Modes: "System" (standard), "Dark", "Light"
 customtkinter.set_default_color_theme("green")  # Themes: "blue" (standard), "green", "dark-blue"
